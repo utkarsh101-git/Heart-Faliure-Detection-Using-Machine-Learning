@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Medical Care</title>
+    <style>
+    body  {
+  
+   background: url('backg.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+  
+    }   
+    </style>
+
+  </head>
+  <body>
+    <figure class="text-center">
+        <blockquote class="blockquote">
+            <h1 class="display-1">Medical care System</h1>
+        </blockquote>
+      </figure>
+
+      <figure class="text-center">
+        <blockquote class="blockquote">
+            <p class="display-5">Welcome user- {{usr}}</p>
+        </blockquote>
+      </figure>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    -->
+    <div class="container">
+        <form action="/prediction" method="post">
+          
+          <div class="mb-3">
+            <label for="f1" class="form-label"><h1>Age</h1></label>
+            <input type="text" class="form-control" id="f1" name="f1" placeholder="Enter the age">
+          </div>
+
+          <h1>Whether patient is suffering from anemia </h1>
+          <div class="input-group mb-3">    
+            <select class="form-select" id="f2" name="f2">
+              <option selected> Choose option...(Yes/No)</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+            <label class="input-group-text" for="f2">Options</label>
+          </div>
+
+          <div class="mb-3">
+            <label for="f3" class="form-label"><h1>creatinine_phosphokinase level</h1></label>
+            <input type="text" class="form-control" id="f3" name="f3" placeholder="Enter amount of level">
+          </div>
+
+          <h1>Whether patient is suffering from Diabetes </h1>
+          <div class="input-group mb-3">    
+            <select class="form-select" id="f4" name="f4">
+              <option selected> Choose option...(Yes/No)</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+            <label class="input-group-text" for="f4">Options</label>
+          </div>   
+        
+        <div class="mb-3">
+          <label for="f5" class="form-label"><h1>Ejection fraction</h1></label>
+          <input type="text" class="form-control" id="f5" name="f5" placeholder="Enter amount of level">
+        </div>
+
+        <h1>Whether patient has high blood pressure </h1>
+          <div class="input-group mb-3">    
+            <select class="form-select" id="f6" name="f6">
+              <option selected> Choose option...(Yes/No)</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+            <label class="input-group-text" for="f6">Options</label>
+          </div>  
+
+          <div class="mb-3">
+            <label for="f7" class="form-label"><h1>Platelets count in blood</h1></label>
+            <input type="text" class="form-control" id="f7" name="f7" placeholder="Enter amount of level">
+          </div>
+
+          <div class="mb-3">
+            <label for="f8" class="form-label"><h1>Serum_creatinine level</h1></label>
+            <input type="text" class="form-control" id="f8" name="f8" placeholder="Enter amount of level">
+          </div>  
+
+          <div class="mb-3">
+            <label for="f9" class="form-label"><h1>Serum_sodium level</h1></label>
+            <input type="text" class="form-control" id="f9" name="f9" placeholder="Enter amount of level">
+          </div>
+
+          <h1>Gender of the patient</h1>
+          <div class="input-group mb-3">    
+            <select class="form-select" id="f10" name="f10">
+              <option selected> Choose option...(Male/Female)</option>
+              <option value="0">Female</option>
+              <option value="1">Male</option>
+            </select>
+            <label class="input-group-text" for="f10">Options</label>
+          </div> 
+
+          <h1>Whether patient do smoking </h1>
+          <div class="input-group mb-3">    
+            <select class="form-select" id="f11" name="f11">
+              <option selected> Choose option...(Yes/No)</option>
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+            </select>
+            <label class="input-group-text" for="f11">Options</label>
+          </div> 
+
+          <div class="mb-3">
+            <label for="f12" class="form-label"><h1>Time period of suffering</h1></label>
+            <input type="text" class="form-control" id="f12" name="f12" placeholder="Enter number of months">
+          </div>
+
+          
+          
+            <button type="submit" class="btn btn-primary">Submit</button>
+          
+          </form>
+    </div>
+    
+  </body>
+</html>
